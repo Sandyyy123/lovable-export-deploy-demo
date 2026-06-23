@@ -1,0 +1,33 @@
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --accent: #6c5ce7;
+  --text: #e7e7ee;
+  --muted: #9b9bb0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+.page { max-width: 920px; margin: 0 auto; padding: 48px 20px; }
+.hero h1 { font-size: 2.2rem; margin: 0 0 8px; }
+.accent { color: var(--accent); }
+.sub { color: var(--muted); max-width: 620px; }
+.nav a, .steps + a, a { color: var(--accent); text-decoration: none; }
+.counter button {
+  background: var(--accent); color: #fff; border: 0;
+  padding: 12px 18px; border-radius: 10px; cursor: pointer; font-size: 1rem;
+}
+.grid {
+  display: grid; gap: 16px; margin-top: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+.card {
+  background: var(--surface); border: 1px solid #23233044;
+  border-radius: 12px; padding: 18px;
+}
+.card h3 { margin: 0 0 8px; color: var(--accent); }
+.steps li { margin: 8px 0; }
